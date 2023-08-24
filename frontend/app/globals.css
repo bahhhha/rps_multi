@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  max-width: 100vw;
+}
+
+.shadow-solid {
+    filter: drop-shadow(5px 5px 0px rgba(0, 0, 0, 0.4));
+}
+
+.move-around {
+  animation: moveAroundAnimation 1.5s infinite alternate;
+  
+}
+
+.gameBg {
+  background-color: #060606;
+    opacity: 1;
+    background-image: radial-gradient(#212121 1.55px, #060606 1.55px);
+    background-size: 31px 31px;
+}
+
+@keyframes moveAroundAnimation {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(20px);
+  }
+
+ 
+}
+
+.introtext {
+  color: rgb(255, 211, 68);
+  text-shadow: 2px 2px 0px rgb(182, 0, 0);
+}
+
+.introbutton {
+  color: rgb(182, 0, 0);
+  box-shadow: 3px 3px 0px rgb(182, 0, 0);
+  background-color: rgb(255, 211, 68);
+}
+
+.introbutton:hover {
+  box-shadow: 3px 3px 0px rgb(255, 211, 68);
+  background-color: rgb(182, 0, 0);
+  color: rgb(255, 211, 68);
+}
+
+.choice:hover {
+  filter: grayscale(100%) brightness(150%);
+}
+
+.lobbybutton {
+  box-shadow: 0px 2px 0px rgb(255, 255, 255);
+}
+
+.lobbybutton:hover {
+  box-shadow: 0px 2px 0px #4a7deb;
+}
+
+.lobbyenlist {
+    text-shadow: 3px 3px 0px #4a7deb;
+}
+
+.gamecomponent {
+  box-shadow: 4px 4px 0px #4a7deb;
+}
